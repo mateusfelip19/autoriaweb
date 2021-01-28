@@ -1,0 +1,132 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Atividade 3</title>
+
+<link rel="stylesheet" type="text/css" href="demo.css" media="Screen"/></head>
+
+<body>
+   
+    <header>
+        <img align ="left" src="minha foto.jpg" width="250" height="250">
+    </header>
+<div id="dadospessoais">  
+    <H1>Dados Pessoais:</H1><p>
+        <H3>- Nome: Mateus Felipe Fernandes Arruda</H3>
+        <h3>- Idade: 21 anos</h3>
+        <h3>- Nacionalidade: Brasileiro</h3>
+        <h3>- Estado Civil: Solteiro </h3>
+        <h3>- Email: mateusarruda96@gmail.com</h3>
+    
+</p>
+<br>
+<p><h3>Meu nome é Mateus Felipe, conhecido por algumas pessoas pelo apelido "Gordinho" tenho 21 anos, sou um jovem como um pouco diferente da maioria sou meio que isolado, prefiro ficar em casa ao invés de sair, faço faculdade de Licenciatura em Informática no IFRN Natal-Campus Zona Norte,
+    sou do tipo de aluno que basicamente só estuda o básico para tirar a média e passar no final do semestre, poucas são as disciplinas que realmente eu caio de “cabeça”.</h3></p>
+<p><h3>Gosto bastante de series e filmes de ficção cientifica, com temática de zumbi e coisas sobrenaturais, também gosto bastante de animes, ultimamente a serie que no qual venho dedicando uma maior atenção é Fear The Walking Dead, 
+    mas além dela também assisto The Flash que é serie no qual sou maior fã, sei todas as temporadas, todos os personagens além de a historia que se passa nela sempre ter me chamado a atenção.</h3></p>
+    <p><h3>Sou um jovem com poucas experiências profissionais, mais estou aberto a crescer de
+        profissionalmente de forma produtiva e eficiente, que a cada novo conhecimento eu leve isso para minha vida e isso me torne um novo ser a cada dia.</h3>
+    </p>
+</div>
+<div id="series">
+    <h1> Series e animes que gosto: </h1>
+    <h1>Series</h1>
+     <ol>
+        <li><h3>The walking dead</h3></li>
+        <li><h3>The Flash</h3></li>
+        <li><h3>Fear The Walking Dead</h3></li>
+    </ol>
+<h1>Animes</h1>
+    <ol>
+        <li><h3>Shingeki no Kyojin</h3></li>
+        <li><h3>Fairy Tail</h3></li>
+        <li><h3>Nanatsu no Taizai</h3></li><br>
+
+</ol>
+</div>
+<div id="dadosprofissionais">
+    <h1>Dados Profissionais:</h1><br>
+    <ul><H2>Experiências Profissionais</H2>
+        <li><h3>Estágio de Iniciação Docente em Informática – PIBID
+            Período: 1 ano e 8 meses</h3></li>
+            <li><h3>Programa de Residência Pedagógica – PRP
+                Período: Em andamento</h3></li><br></ul>
+               
+                 <Ul><H2>Qualificações</H2>
+                    <li><h3>Minicurso de Arduíno – 8H – IFRN</h3></li>
+                      <li><h3>Minicurso de Manutenção Básica em Computadores Portáteis – 8H – IFRN</h3></li>
+                       <li> <h3>Minicurso de Iniciação ao Terminal Linux – 2H – IFRN</h3></li> </Ul>
+    
+                    
+    
+             
+    
+            </div>
+
+<div id="Documentos">
+    <p><H2> Documentos: </H2></p>
+<ul>
+    <h3><li><a href="http://lattes.cnpq.br/9144566801474830">Curriculo Lattes</a><br></li></h3>
+    <h3><li><a href="https://drive.google.com/file/d/1q7wcFQvj3yujr2yyAFB_h_7sH8RrTOu4/view?usp=sharing">Curriculo Padrão</a></li></h3>
+</ul>
+
+    <br><p><h2>Endereço:</h2> </p>
+    <ul>
+        <li><h3>Rua Itirapina  n° 85/ Cep: 59.135-750</h3></li>
+        <li><h3>Conjunto Lagoa Azul </h3></li>
+        <li><h3>Natal/RN</h3></li>
+    </ul>
+        </div>
+  
+    <div id="Loja">
+        <h2>Produtos</h2>
+        <h3>Bolo de chocolate</h3>
+        <img src="bolo-chocolate.jpg" width="250px" alt="Bolo de chocolate">
+        <h3>R$ 10,00</h3>
+
+        <p>
+        <label for="qtd">Quantidade:</label>
+            <!--<input type="number" id="qtd">-->
+            <select name="" id="qtd" onchange="quantidade()">
+                <option value="1" selected="selected">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </p>
+
+        <p>
+            Valor total: 
+            <span id="valorTotal">
+                <strong> R$10 </strong>
+            </span>
+        </p>
+        <button onclick="alert('Compra realizada com sucesso!')">Finalizar compra</button>
+
+        <script></script>
+
+  </div>      
+
+<p><H2>Feedback:</H2></p>
+<ul>
+    <h2>
+        <p> Dê um feedback a respeito de como está ficando a página, através desse formulário:</p> </h2>
+    <li><h3><a href="form.html">Deixe seu feedback aqui:</a></li></h3>
+   
+</ul>
+
+<script type="text/javascript">
+    var valorTotal = 10;
+    var valor  = document.getElementById('valorTotal')
+    console.log(valor)
+    function quantidade(){
+        var qtd = document.getElementById('qtd').value;
+        console.log(qtd)
+        valor.innerHTML = '<strong>' + 'R$' + qtd*valorTotal + '</strong>';
+    }
+</script>
+
+
+</body>
+</html>
